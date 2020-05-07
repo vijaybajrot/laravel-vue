@@ -1,9 +1,10 @@
 # Laravel and Vuejs Setup
 
-### Using : 
+### Using :
 
-- Laravel 7.x
-- Vue
-- Vuex
-- Vue Router
-- Bootsrap Vue
+-   Laravel 7.x
+-   Vue
+-   Vuex
+-   Vue Router
+-   Bootstrap Vue
+-   Bootstrap 4
