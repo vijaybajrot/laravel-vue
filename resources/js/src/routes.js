@@ -3,7 +3,7 @@ const lazyLoad = page => {
 };
 
 const routes = [
-    { path: "/", component: lazyLoad("Home") },
+    { path: "/", component: lazyLoad("Home/index") },
     { path: "/about", component: lazyLoad("About") }
 ];
 
