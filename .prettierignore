@@ -1,0 +1,13 @@
+/node_modules
+/build
+/dist
+/public
+/.cache-loader
+/.git
+
+*.ejs
+*.snap
+
+*.jpeg
+*.jpg
+*.png

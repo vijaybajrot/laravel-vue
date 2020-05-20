@@ -1,8 +1,26 @@
 module.exports = {
-    parser: "vue-eslint-parser",
-    extends: ["eslint:recommended", "plugin:vue/vue3-recommended"],
+    env: {
+        browser: true,
+        node: true
+    },
+    parserOptions: {
+        parser: "babel-eslint"
+    },
+    extends: [
+        "eslint:recommended",
+        // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
+        // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
+        "plugin:vue/recommended",
+        "prettier/vue",
+        "plugin:prettier/recommended"
+    ],
+    // required to lint *.vue files
+    plugins: ["vue"],
+    // add your custom rules here
     rules: {
-        // override/add rules settings here, such as:
-        "vue/no-unused-vars": "warn"
+        semi: "off",
+        "no-console": "off",
+        "vue/max-attributes-per-line": "off",
+        "prettier/prettier": ["error", { semi: true, tabWidth: 2 }]
     }
 };

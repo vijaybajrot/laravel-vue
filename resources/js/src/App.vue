@@ -1,29 +1,29 @@
-<template>
-  <div>
-    <app-header></app-header>
-    <b-container>
-      <b-row>
-        <b-col>
-          <div>
-            <router-view></router-view>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
-</template>
-
 <script>
-import Header from "@app/components/Header.vue";
+import Header from '@app/components/Header.vue';
 
 export default {
-  data() {
-    return {
-      msg: "Laravel Vuejs App"
-    };
-  },
-  components: {
-    "app-header": Header
-  }
+	components: {
+		'app-header': Header,
+	},
+	data() {
+		return {
+			msg: 'Laravel Vuejs App',
+		};
+	},
 };
 </script>
+
+<template>
+	<div>
+		<app-header />
+		<b-container>
+			<b-row>
+				<b-col>
+					<div>
+						<router-view />
+					</div>
+				</b-col>
+			</b-row>
+		</b-container>
+	</div>
+</template>
